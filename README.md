@@ -16,6 +16,9 @@ To get the Cloverleaf3D code and version:
 
     $git clone git@github.com:UK-MAC/CloverLeaf3D_ref.git
     $git checkout v1.1
+    
+Reference for builds and runs:
+https://gitlab.com/arm-hpc/packages/-/wikis/packages/cloverleaf3d
 
 The demostration is:
   Arm Compiler for Linux (ACFL) on TX2
