@@ -11,7 +11,7 @@ And the current presentation.
 
 To get the Cloverleaf3D code and version:
 
-$git clone git@github.com:UK-MAC/CloverLeaf3D_ref.git
-$git checkout v1.1
+    $git clone git@github.com:UK-MAC/CloverLeaf3D_ref.git
+    $git checkout v1.1
 
 
