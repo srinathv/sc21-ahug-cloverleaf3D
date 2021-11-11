@@ -129,8 +129,13 @@ endif
 
 FLAGS=$(FLAGS_$(COMPILER)) $(OMP) $(I3E) $(OPTIONS)
 CFLAGS=$(CFLAGS_$(COMPILER)) $(OMP) $(I3E) $(C_OPTIONS) -c
-MPI_COMPILER=mpif90
-C_MPI_COMPILER=mpicc
+ifeq ($(COMPILER),FUJITSU)
+     MPI_COMPILER=mpifrt
+     C_MPI_COMPILER=mpifcc
+else
+     MPI_COMPILER=mpif90 
+     C_MPI_COMPILER=mpicc
+endif
 
 clover_leaf: c_lover *.f90 Makefile
 	$(MPI_COMPILER) $(FLAGS)	\
