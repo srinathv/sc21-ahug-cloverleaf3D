@@ -1,0 +1,61 @@
+Command:        /home/srivad01/REPOS/CloverLeaf3D_ref/exe_builds/A64FX_runs/clover_leaf_fj
+Resources:      1 node (48 physical, 48 logical cores per node)
+Memory:         32 GiB per node
+Tasks:          48 processes, OMP_NUM_THREADS was 0
+Machine:        pacu12
+Start time:     Thu Nov 11 15:24:44 2021
+Total time:     17 seconds
+Full path:      /home/srivad01/REPOS/CloverLeaf3D_ref/exe_builds/A64FX_runs
+
+Summary: clover_leaf_fj is Compute-bound in this configuration
+Compute:                                     66.5% |======|
+MPI:                                         33.5% |==|
+I/O:                                      &lt;0.1% ||
+This application run was Compute-bound. A breakdown of this time and advice for investigating further is in the CPU Metrics section below. 
+
+CPU Metrics:
+Configured Linux perf event metrics:
+SVE_INST_RETIRED:                              216 M/s
+INST_RETIRED:                                 1.07 G/s
+SIMD_INST_RETIRED:                             222 M/s
+
+MPI:
+A breakdown of the 33.5% MPI time:
+Time in collective calls:                    17.2% |=|
+Time in point-to-point calls:                82.8% |=======|
+Effective process collective rate:            3.31 kB/s
+Effective process point-to-point rate:         340 MB/s
+Most of the time is spent in point-to-point calls with an average transfer rate. Using larger messages and overlapping communication and computation may increase the effective transfer rate.
+
+I/O:
+A breakdown of the <0.1% I/O time:
+Time in reads:                                0.0% |
+Time in writes:                             100.0% |=========|
+Effective process read rate:                  0.00 bytes/s
+Effective process write rate:                  809 kB/s
+Most of the time is spent in write operations with a very low effective transfer rate. This may be caused by contention for the filesystem or inefficient access patterns. Use an I/O profiler to investigate which write calls are affected.
+
+OpenMP:
+A breakdown of the 99.0% time in OpenMP regions:
+Computation:                                  0.6% ||
+Synchronization:                             99.4% |=========|
+Physical core utilization:                  100.0% |=========|
+System load:                                100.1% |=========|
+Significant time is spent synchronizing threads in parallel regions. Check the affected regions with a profiler.
+This may be a sign of overly fine-grained parallelism (OpenMP regions in tight loops) or workload imbalance.
+
+Memory:
+Per-process memory usage may also affect scaling:
+Mean process memory usage:                    57.1 MiB
+Peak process memory usage:                    63.4 MiB
+Peak node memory usage:                      47.0% |====|
+The peak node memory usage is low. Running with fewer MPI processes and more data on each process may be more efficient.
+
+Energy:
+A breakdown of how energy was used:
+CPU:                                      not supported
+System:                                   not supported
+Mean node power:                          not supported
+Peak node power:                              0.00 W
+Energy metrics are not available on this system.
+

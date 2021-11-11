@@ -1,0 +1,65 @@
+Command:        mpirun -n 64 --bind-to core ./clover_leaf_arm_NoMarch
+Resources:      1 node (64 physical, 64 logical cores per node)
+Memory:         255 GiB per node
+Tasks:          64 processes, OMP_NUM_THREADS was 0
+Machine:        pacu08
+Start time:     Wed Nov 10 18:27:55 2021
+Total time:     17 seconds
+Full path:      /home/srivad01/REPOS/CloverLeaf3D_ref/exe_builds/ACFL_runs
+
+Summary: clover_leaf_arm_NoMarch is Compute-bound in this configuration
+Compute:                                     71.3% |======|
+MPI:                                         28.7% |==|
+I/O:                                      &lt;0.1% ||
+This application run was Compute-bound. A breakdown of this time and advice for investigating further is in the CPU Metrics section below. 
+As little time is spent in MPI calls, this code may also benefit from running at larger scales.
+
+CPU Metrics:
+Linux perf event metrics:
+Single-core code:                             0.5% ||
+OpenMP regions:                              99.5% |=========|
+Cycles per instruction:                       1.35 
+L2D cache miss:                              38.3% |===|
+Stalled backend cycles:                      36.7% |===|
+Stalled frontend cycles:                      3.2% ||
+Cycles per instruction is moderate. Lower values are better but are application-dependent. High values may indicate memory latency or branch mispredictions.
+
+MPI:
+A breakdown of the 28.7% MPI time:
+Time in collective calls:                    18.4% |=|
+Time in point-to-point calls:                81.6% |=======|
+Effective process collective rate:            3.76 kB/s
+Effective process point-to-point rate:         350 MB/s
+Most of the time is spent in point-to-point calls with an average transfer rate. Using larger messages and overlapping communication and computation may increase the effective transfer rate.
+
+I/O:
+A breakdown of the <0.1% I/O time:
+Time in reads:                                0.0% |
+Time in writes:                               0.0% |
+Effective process read rate:                  0.00 bytes/s
+Effective process write rate:                 0.00 bytes/s
+Most of the time is spent in write operations with a very low effective transfer rate. This may be caused by contention for the filesystem or inefficient access patterns. Use an I/O profiler to investigate which write calls are affected.
+
+OpenMP:
+A breakdown of the 99.5% time in OpenMP regions:
+Computation:                                 98.9% |=========|
+Synchronization:                              1.1% ||
+Physical core utilization:                  100.0% |=========|
+System load:                                100.4% |=========|
+OpenMP thread performance looks good. Check the CPU breakdown for advice on improving code efficiency.
+
+Memory:
+Per-process memory usage may also affect scaling:
+Mean process memory usage:                     109 MiB
+Peak process memory usage:                     117 MiB
+Peak node memory usage:                       7.0% ||
+The peak node memory usage is very low. Running with fewer MPI processes and more data on each process may be more efficient.
+
+Energy:
+A breakdown of how energy was used:
+CPU:                                      not supported
+System:                                   not supported
+Mean node power:                          not supported
+Peak node power:                              0.00 W
+Energy metrics are not available on this system.
+
