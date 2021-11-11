@@ -1,0 +1,289 @@
+The following metrics can be enabled or disabled
+------------------------------------------------
+
+bytes_read (enabled by default)
+Disk read transfer - The number of bytes read per second from the storage layer
+
+bytes_read_total (enabled by default)
+Disk bytes read - The number of bytes read in total from the storage layer
+
+bytes_written (enabled by default)
+Disk write transfer - The number of bytes written per second to the storage layer
+
+bytes_written_total (enabled by default)
+Disk bytes written - The number of bytes written in total to the storage layer
+
+cpu_time_percentage (enabled by default)
+CPU time - The percentage of time spent executing instructions
+
+gpu_dtod_bytes_transferred_per_second (enabled by default)
+Device-to-device byte transfer rate - The number of bytes transferred within a device per second
+
+gpu_dtod_bytes_transferred_total (enabled by default)
+Device-to-device bytes transferred - The number of bytes transferred device-to-device
+
+gpu_dtod_memory_transfers_per_second (enabled by default)
+Device-to-device memory transfer rate - The number of device-to-device memory transfers per second
+
+gpu_dtod_memory_transfers_total (enabled by default)
+Device-to-device memory transfers - The number of device-to-device memory transfers
+
+gpu_dtod_transfer_time_percentage (enabled by default)
+Time in device-to-device transfers - The proportion of time spent in device-to-device transfers
+
+gpu_dtod_transfer_time_total (enabled by default)
+Time in device-to-device transfers - The total time spent in device-to-device transfers
+
+gpu_dtoh_bytes_transferred_per_second (enabled by default)
+Device-to-host byte transfer rate - The number of bytes transferred from device to host per second
+
+gpu_dtoh_bytes_transferred_total (enabled by default)
+Device-to-host bytes transferred - The number of bytes transferred device-to-host
+
+gpu_dtoh_memory_transfers_per_second (enabled by default)
+Device-to-host memory transfer rate - The number of device-to-host memory transfers per second
+
+gpu_dtoh_memory_transfers_total (enabled by default)
+Device-to-host memory transfers - The number of device-to-host memory transfers
+
+gpu_dtoh_transfer_time_percentage (enabled by default)
+Time in device-to-host transfers - The proportion of time spent in device-to-host transfers
+
+gpu_dtoh_transfer_time_total (enabled by default)
+Time in device-to-host transfers - The total time spent in device-to-host transfers
+
+gpu_htod_bytes_transferred_per_second (enabled by default)
+Host-to-device byte transfer rate - The number of bytes transferred from host to device per second
+
+gpu_htod_bytes_transferred_total (enabled by default)
+Host-to-device bytes transferred - The number of bytes transferred host-to-device
+
+gpu_htod_memory_transfers_per_second (enabled by default)
+Host-to-device memory transfer rate - The number of host-to-device memory transfers per second
+
+gpu_htod_memory_transfers_total (enabled by default)
+Host-to-device memory transfers - The number of host-to-device memory transfers
+
+gpu_htod_transfer_time_percentage (enabled by default)
+Time in host-to-device transfers - The proportion of time spent in host-to-device transfers
+
+gpu_htod_transfer_time_total (enabled by default)
+Time in host-to-device transfers - The total time spent in host-to-device transfers
+
+gpu_htoh_bytes_transferred_per_second (enabled by default)
+Host-to-host byte transfer rate - The number of bytes transferred within the host per second
+
+gpu_htoh_bytes_transferred_total (enabled by default)
+Host-to-host bytes transferred - The number of bytes transferred host-to-host
+
+gpu_htoh_memory_transfers_per_second (enabled by default)
+Host-to-host memory transfer rate - The number of host-to-host memory transfers per second
+
+gpu_htoh_memory_transfers_total (enabled by default)
+Host-to-host memory transfers - The number of host-to-host memory transfers
+
+gpu_htoh_transfer_time_percentage (enabled by default)
+Time in host-to-host transfers - The proportion of time spent in host-to-host transfers
+
+gpu_htoh_transfer_time_total (enabled by default)
+Time in host-to-host transfers - The total time spent in host-to-host transfers
+
+gpu_offdevice_bytes_transferred_per_second (enabled by default)
+Off-device byte transfer rate - The number of bytes transferred to/from a device per second
+
+gpu_offdevice_bytes_transferred_total (enabled by default)
+Off-device bytes transferred - The number of bytes transferred to/from a device
+
+gpu_offdevice_memory_transfers_per_second (enabled by default)
+Off-device memory transfer rate - The number of off-device memory transfers per second
+
+gpu_offdevice_memory_transfers_total (enabled by default)
+Off-device memory transfers - The number of off-device memory transfers
+
+gpu_offdevice_transfer_time_percentage (enabled by default)
+Time in off-device transfers - The proportion of time spent in transfers to/from a device
+
+gpu_offdevice_transfer_time_total (enabled by default)
+Time in off-device transfers - The total time spent in transfers to/from a device
+
+gpu_ptop_bytes_transferred_per_second (enabled by default)
+Peer-to-peer byte transfer rate - The number of bytes transferred from one device to another device per second
+
+gpu_ptop_bytes_transferred_total (enabled by default)
+Peer-to-peer bytes transferred - The number of bytes transferred peer-to-peer
+
+gpu_ptop_memory_transfers_per_second (enabled by default)
+Peer-to-peer memory transfer rate - The number of peer-to-peer memory transfers per second
+
+gpu_ptop_memory_transfers_total (enabled by default)
+Peer-to-peer memory transfers - The number of peer-to-peer memory transfers
+
+gpu_ptop_transfer_time_percentage (enabled by default)
+Time in peer-to-peer transfers - The proportion of time spent in peer-to-peer transfers
+
+gpu_ptop_transfer_time_total (enabled by default)
+Time in peer-to-peer transfers - The total time spent in peer-to-peer transfers
+
+gpu_unknown_bytes_transferred_per_second (enabled by default)
+Byte transfer rate of unknown type - The number of bytes transferred per second of unknown transfer type
+
+gpu_unknown_bytes_transferred_total (enabled by default)
+Bytes transferred of unknown type - The total number of bytes transferred of unknown transfer type
+
+gpu_unknown_memory_transfers_per_second (enabled by default)
+Memory transfer rate of unknown type - The number of memory transfers per second of unknown transfer type
+
+gpu_unknown_memory_transfers_total (enabled by default)
+Memory transfers of unknown type - The number of memory transfers of unknown transfer type
+
+gpu_unknown_transfer_time_percentage (enabled by default)
+Time in transfers of unknown type - The proportion of time spent in transfers of unknown type
+
+gpu_unknown_transfer_time_total (enabled by default)
+Time in transfers of unknown type - The total time spent in transfers of unknown type
+
+instr_branch (enabled by default)
+CPU branch - The percentage of time spent executing branch instructions (high values may indicate branch prediction failure)
+
+instr_fp (enabled by default)
+CPU floating-point - The percentage of time spent executing floating-point instructions (both scalar and vector)
+
+instr_implicit_mem (enabled by default)
+CPU implicit memory access - The percentage of time spent executing instructions with implicit memory accesses
+
+instr_int (enabled by default)
+CPU integer - The percentage of time spent executing integer instructions (both scalar and vector)
+
+instr_mem (enabled by default)
+CPU memory access - The percentage of time spent executing memory-related instructions (e.g. mov, load, store)
+
+instr_other (enabled by default)
+CPU other - The percentage of time spent executing other instructions
+
+instr_scalar_fp (enabled by default)
+CPU fp scalar - The percentage of time spent executing floating-point scalar instructions
+
+instr_scalar_int (enabled by default)
+CPU integer scalar - The percentage of time spent executing integer scalar instructions
+
+instr_vector_fp (enabled by default)
+CPU fp vector - The percentage of time spent executing floating-point vector instructions (e.g. SSE)
+
+instr_vector_int (enabled by default)
+CPU integer vector - The percentage of time spent executing integer vector instructions (e.g. SSE / MMX)
+
+involuntary_context_switches (enabled by default)
+Involuntary context switches - The rate of involuntary context switches on a core, e.g. switching due to CPU contention
+
+loadavg (enabled by default)
+System load - The number of threads currently running on a compute node as a percentage of physical cores
+
+lustre_bytes_read (enabled by default)
+Lustre read rate - The number of bytes read per second from Lustre
+
+lustre_bytes_written (enabled by default)
+Lustre write rate - The number of bytes written per second to Lustre
+
+lustre_metadata_operations (enabled by default)
+Lustre metadata operations - The number of Lustre metadata operations per second
+
+lustre_metadata_operations_total (enabled by default)
+Lustre metadata operations - The total number of Lustre metadata operations
+
+lustre_opens (enabled by default)
+Lustre file opens - The number of Lustre file open operations per second
+
+lustre_opens_total (enabled by default)
+Lustre file opens - The total number of Lustre file open operations
+
+lustre_rchar_total (enabled by default)
+Lustre bytes read - The number of bytes read in total from Lustre
+
+lustre_wchar_total (enabled by default)
+Lustre bytes written - The number of bytes written in total from Lustre
+
+memory_per_node (enabled by default)
+Memory per node - The RAM installed in the node
+
+mpi_call_time (enabled by default)
+MPI call duration - Duration of sampled MPI calls
+
+mpi_calls (enabled by default)
+MPI calls - Number of MPI calls per second per process
+
+mpi_collect (enabled by default)
+MPI collectives - Number of collective MPI calls per second per process
+
+mpi_collect_bytes (enabled by default)
+MPI collectives bytes - MPI bytes sent and received per second in a collective MPI call
+
+mpi_p2p (enabled by default)
+MPI point-to-point - Number of point-to-point MPI calls per second per process
+
+mpi_p2p_bytes (enabled by default)
+MPI point-to-point bytes - MPI bytes sent and received per second in a point-to-point MPI call
+
+mpi_recv (enabled by default)
+MPI received - MPI bytes received per second per process
+
+mpi_sent (enabled by default)
+MPI sent - MPI bytes sent per second per process
+
+node_mem_percent (enabled by default)
+Node memory usage - Total physical memory used by node
+
+nvidia_gpu_usage (enabled by default)
+GPU utilization - Percent of GPUs that were being used per node
+
+nvidia_gpus_count (enabled by default)
+Number of GPUs - Number of GPUs per node
+
+nvidia_memory_used (enabled by default)
+GPU memory usage - Allocated frame buffer memory used per node
+
+nvidia_memory_used_percent (enabled by default)
+GPU memory usage - Allocated frame buffer memory used per node percentage
+
+nvidia_power (enabled by default)
+GPU power usage - GPU power consumption per node
+
+nvidia_total_memory (enabled by default)
+GPU total memory - Frame buffer memory size per node
+
+rchar_rate (enabled by default)
+POSIX I/O read rate - The number of bytes read per second by I/O operation system calls
+
+rchar_total (enabled by default)
+POSIX I/O bytes read - The number of bytes read in total by I/O operation system calls
+
+rss (enabled by default)
+Memory usage - Total physical memory used by each process (RSS)
+
+syscr (enabled by default)
+POSIX read syscall rate - The number of read system calls per second.
+
+syscr_total (enabled by default)
+POSIX read syscalls - The number of read system calls performed by I/O operation in total.
+
+syscw (enabled by default)
+POSIX write syscall rate - The number of write system calls per second.
+
+syscw_total (enabled by default)
+POSIX write syscalls - The number of write system calls performed by I/O operation in total.
+
+system_time_percentage (enabled by default)
+Kernel-mode CPU time - The percentage of time spent executing instructions in kernel mode
+
+user_time_percentage (enabled by default)
+User-mode CPU time - The percentage of time spent executing instructions in user mode
+
+voluntary_context_switches (enabled by default)
+Voluntary context switches - The rate of voluntary context switches on a core, e.g. switching threads because one is waiting on an I/O device
+
+wchar_rate (enabled by default)
+POSIX I/O write rate - The number of bytes written per second by I/O operation system calls
+
+wchar_total (enabled by default)
+POSIX I/O bytes written - The number of bytes written in total by I/O operation system calls
+
+
