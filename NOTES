@@ -1,0 +1,2 @@
+ON the oracle A1: 
+  mpiexec --report-bindings --bind-to-core --bycore -n 2 ./clover_leaf can help decern core usage
