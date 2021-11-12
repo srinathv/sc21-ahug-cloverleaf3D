@@ -80,7 +80,6 @@ FLAGS_CRAY      = -em -ra -h acc_model=fast_addr:no_deep_copy:auto_async_all
 FLAGS_PGI       = -fastsse -gopt -Mipa=fast -Mlist -g
 FLAGS_PATHSCALE = -O3
 FLAGS_XL       = -O5 -qipa=partition=large -g -qfullpath -Q -qsigtrap -qextname=flush:ideal_gas_kernel_c:viscosity_kernel_c:pdv_kernel_c:revert_kernel_c:accelerate_kernel_c:flux_calc_kernel_c:advec_cell_kernel_c:advec_mom_kernel_c:reset_field_kernel_c:timer_c:unpack_top_bottom_buffers_c:pack_top_bottom_buffers_c:unpack_left_right_buffers_c:pack_left_right_buffers_c:field_summary_kernel_c:update_halo_kernel_c:generate_chunk_kernel_c:initialise_chunk_kernel_c:calc_dt_kernel_c -qlistopt -qattr=full -qlist -qreport -qxref=full -qsource -qsuppress=1506-224:1500-036
-FLAGS_ARM      = -O3 -ffp-contract=fast -march=armv8.1-a -mcpu=native -g
 FLAGS_ARM      = -O3 -ffp-contract=fast -mcpu=native -g
 FLAGS_FUJITSU   = -O3 -g -KA64FX -KSVE -Kfast,preex -Ksimd=auto -Ksimd_packed_promotion -Ksimd_reduction_product
 FLAGS_          = -O3
