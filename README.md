@@ -23,7 +23,7 @@ https://gitlab.com/arm-hpc/packages/-/wikis/packages/cloverleaf3d
 The demostration is:
   Arm Compiler for Linux (ACFL) on TX2
   Fujitsu on A64FX
-  nvHPC SDK on TX2 
+  Nvidia: nvHPC SDK on TX2 
     ** tried on Altair but miminal runs completed for different MPI counts.  
     
 
